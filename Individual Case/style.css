@@ -1,0 +1,23 @@
+ul{
+    list-style-type: none;
+}
+body {
+    color: #C3073F;
+    background-color: black;
+    font-weight: bold;
+}
+figcaption {
+    font-size: small;
+}
+
+h1 {
+    text-align: center;
+    background-color: #343A40;
+    margin-bottom: 0%;
+}
+tbody {
+    color:#C3073F;
+}
+th, td{
+    border: 2px white solid;
+}

@@ -24,24 +24,34 @@
     <h1>
       History of Stands
     </h1>
-    <nav class="navbar sticky-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Home</a>
-        <a class="navbar-brand" href="overview.html">Stand?</a>
-        <a class="navbar-brand" href="history.html">History</a>
-        <a class="navbar-brand" href="abilities.html">Abilities</a>
-        <a class="navbar-brand" href="users.html">Users</a>
-        <a class="navbar-brand" href="dioSim.html">Date</a>
-    </nav>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="overview.html">Stand?</a>
+      <a href="history.html">History</a>
+      <a href="abilities.html">Abilities</a>
+      <a href="users.html">Users</a>
+      <a href="dioSim.html">Date</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+      </a>
+    </div>
 
     <div class="container">
-    <p>Give me your hard-earned cash and sign up for a subscription at the form below please. <br></p>
+    <p>Please put your feedback below <br></p>
     <form>
+      <fieldset>
         <label for="fname">First Name:</label><br>
         <input type="text" id="fname" name="fname" placeholder="John" required><br>
         <label for="lname">Last Name:</label><br>
         <input type="text" id="lname" name="lname" placeholder="Doe" required><br>
+        </fieldset>
+        <fieldset class="email">
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" placeholder="johndoe@example.com" required><br>
+        </fieldset>
+        <fieldset>
         <label for="country">Select a country</label><br>
         <select id="country" name="country">
             <option value="Afganistan">Afghanistan</option>
@@ -290,21 +300,45 @@
             <option value="Zaire">Zaire</option>
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
-        </select><br>
+        </select>
+        </fieldset><br>
+        <fieldset>
         <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label><br>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Female</label><br>
         <input type="radio" id="other" name="gender" value="other">
         <label for="other">Other</label><br>
-        <input type="submit" value="Submit">
+        </fieldset>
+        <fieldset class="checks">
+          <legend><span>Parts Watched</span></legend>
+          <input type="checkbox" id="part1" value="Part 1" name="lodgings" />
+          <label for="part1" id="p1Label">Part 1</label>
+          <input type="checkbox" id="part2" value="Part 2" name="lodgings" />
+          <label for="part2" id="p2Label">Part 2</label>
+          <input type="checkbox" id="part3" value="Part 3" name="lodgings" />
+          <label for="part3" id="p3Label">Part 3</label>
+          <input type="checkbox" id="part3" value="Part 4" name="lodgings" />
+          <label for="part4" id="p4Label">Part 4</label>
+          <input type="checkbox" id="part5" value="Part 5" name="lodgings" />
+          <label for="part5" id="p5Label">Part 5</label>
+       </fieldset>
+       <input type="button" id="createBtn" value="Submit" />
     </form>
+    <section id="profile">
+      <div id="lodgingsSection">
+         <h4>Parts Watched</h4>
+         <ul id="profileLodgings"></ul>
+      </div>
+   </section>
     <figure>
-        <img src="Pictures/Arrow.jpg" alt="Arrow" class="img-fluid">
+        <img src="Pictures/Arrow.jpg" alt="Arrow" class="img-fluid" id="transformation">
         <figcaption>Stand Arrow. Credit: JoJo Amino Apps</figcaption>
     </figure>
-    </div>
+    </div></div>
+    <script src="input.js"></script>
 
+    <script src="hamburger.js"></script>
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
